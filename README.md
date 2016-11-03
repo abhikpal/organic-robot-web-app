@@ -1,10 +1,10 @@
 # Introduction
 
-Ken Boone's *Organic Robot* makes for an excellent introdution to robotics for a sufficnetly
+Ken Boone's *Organic Robot* makes for an excellent introduction to robotics for a sufficiently
 large set of students. This repository contains code for a Flask web app that we use at
 Ardubotics as a replacement for the two-way radios used in the original design
 
-Ken Boone has a fifteeen page write up complete with workshop intructions. The said PDF is
+Ken Boone has a fifteen page write up complete with workshop instructions. The said PDF is
 also hosted on [his website](http://www.kensrobots.com/Organic.pdf).
 
 # Setup and Usage
