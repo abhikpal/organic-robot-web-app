@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block leftbar %}
-<div class="panel panel-default">
+<div class="panel panel-info">
     <div class="panel-heading">
         <h3 class="panel-title">Current movement direction</h3>
     </div>
@@ -17,14 +17,14 @@
                 <span class="glyphicon glyphicon-massive glyphicon-asterisk" aria-hidden="true">
                 </span>
             </p>
-            <br>
+            <p><h1><span id="num-steps">0</span>&nbsp;steps</h1></p>
         </center>
     </div>
 </div>
 {% endblock %}
 
 {% block rightbar %}
-<div class="panel panel-default">
+<div class="panel panel-info">
     <div class="panel-heading">
         <h3 class="panel-title">Sensor Data</h3>
     </div>
@@ -32,22 +32,23 @@
     <div class="panel-body">
         <h2><small><b>DISTANCE</b></small></h2>
         <div class="input-group">
-          <input    id="sensor-range"
-                    type="text"
-                    class="form-control"
-                    placeholder="Distance from the range sensor"
-                    aria-describedby="basic-addon2">
-          <span class="input-group-addon" id="basic-addon2">feet</span>
+          <input id="sensor-range"
+                 type="number"
+                 value="0"
+                 class="form-control"
+                 aria-describedby="sensor-range-explainer">
+          <span class="input-group-addon" id="sensor-range-explainer">feet</span>
         </div>
+
         <br>
         <h2><small><b>COMPASS</b></small></h2>
         <div class="input-group">
-          <input    id="sensor-range"
-                    type="text"
-                    class="form-control"
-                    placeholder="Compass reading"
-                    aria-describedby="basic-addon2">
-          <span class="input-group-addon" id="basic-addon2">degrees N</span>
+          <input id="sensor-angle"
+                 type="number"
+                 value="0"
+                 class="form-control"
+                 aria-describedby="sensor-angle-explainer">
+          <span class="input-group-addon" id="sensor-angle-explainer">degrees N</span>
         </div>
     </div>
 </div>

@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block leftbar %}
-<div class="panel panel-default">
+<div class="panel panel-info">
     <div class="panel-heading">
         <h3 class="panel-title">Current movement direction</h3>
     </div>
@@ -39,21 +39,38 @@
                     Right
                 </button>
             </p>
+            <p>
+            <div class="input-group">
+            <input  id="num-steps"
+                    type="number"
+                    value="0" 
+                    class="form-control"
+                    aria-describedby="step-explainer">
+            <span class="input-group-addon" id="step-explainer">steps</span>
+            </div>
+            </p>
         </center>
     </div>
 </div>
 {% endblock %}
 
 {% block rightbar %}
-<div class="panel panel-default">
+<div class="panel panel-info">
     <div class="panel-heading">
         <h3 class="panel-title">Sensor Data</h3>
     </div>
     
     <div class="panel-body">
-        <h1><small><b>DISTANCE</b></small><br/><span id="sensor-range">something</span></h1>
+        <h1>
+            <small><b>DISTANCE</b></small><br/>
+            <span id="sensor-range">NA</span>
+            <small>feet</small>
+        </h1>
         <br><br>
-        <h1><small><b>COMPASS</b></small><br/><span id="sensor-compass">something</span></h1>
+        <h1>
+            <small><b>COMPASS</b></small><br/>
+            <span id="sensor-angle">NA</span>
+            <small>degrees N</small></h1>
     </div>
 </div>
 {% endblock %}

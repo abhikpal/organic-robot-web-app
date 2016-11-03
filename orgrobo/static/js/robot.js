@@ -1,12 +1,16 @@
 $(document).ready(function() {
-    namespace = '/dashboard';
+    namespace = '/robot';
 
     socket = io.connect('http://' + document.domain + ':' + location.port + namespace);
     
-    socket.on('data', function(msg) {
-        $('#sensor-range').text(msg.range);
-        $('#sensor-angle').text(msg.angle);
-    })
+    $('#sensor-range').on('change', function() {
+        socket.emit('data', {range:$('#sensor-range').val(), });
+        return false;
+    });
+
+    $('#sensor-range').on('change', send_data);
+    $('#sensor-angle').on('change', send_data);
+
 
     socket.on('move', function(msg) {
         console.log(msg);
