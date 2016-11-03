@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block leftbar %}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Current movement direction</h3>
+    </div>
+    
+    <div class="panel-body">
+        <center>
+            <br>
+            <p id="direction-indicator">
+                <span class="glyphicon glyphicon-massive glyphicon-asterisk" aria-hidden="true">
+                </span>
+            </p>
+            <br>
+            <p>
+                <button id="move-f" type="button" class="btn btn-lg btn-default">
+                    <span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span>
+                    Forward
+                </button>
+
+                <button id="move-b" type="button" class="btn btn-lg btn-default">
+                    <span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span>
+                    Backward
+                </button>
+
+                <button id="move-l" type="button" class="btn btn-lg btn-default">
+                    <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span>
+                    Left
+                </button>
+
+                <button id="move-r" type="button" class="btn btn-lg btn-default">
+                    <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
+                    Right
+                </button>
+            </p>
+        </center>
+    </div>
+</div>
+{% endblock %}
+
+{% block rightbar %}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Sensor Data</h3>
+    </div>
+    
+    <div class="panel-body">
+        <h1><small><b>DISTANCE</b></small><br/><span id="sensor-range">something</span></h1>
+        <br><br>
+        <h1><small><b>COMPASS</b></small><br/><span id="sensor-compass">something</span></h1>
+    </div>
+</div>
+{% endblock %}

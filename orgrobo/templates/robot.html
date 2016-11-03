@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block leftbar %}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Current movement direction</h3>
+    </div>
+    
+    <div class="panel-body">
+        <center>
+            <br>
+            <p id="direction-indicator">
+                <span class="glyphicon glyphicon-massive glyphicon-asterisk" aria-hidden="true">
+                </span>
+            </p>
+            <br>
+        </center>
+    </div>
+</div>
+{% endblock %}
+
+{% block rightbar %}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Sensor Data</h3>
+    </div>
+    
+    <div class="panel-body">
+        <h2><small><b>DISTANCE</b></small></h2>
+        <div class="input-group">
+          <input    id="sensor-range"
+                    type="text"
+                    class="form-control"
+                    placeholder="Distance from the range sensor"
+                    aria-describedby="basic-addon2">
+          <span class="input-group-addon" id="basic-addon2">feet</span>
+        </div>
+        <br>
+        <h2><small><b>COMPASS</b></small></h2>
+        <div class="input-group">
+          <input    id="sensor-range"
+                    type="text"
+                    class="form-control"
+                    placeholder="Compass reading"
+                    aria-describedby="basic-addon2">
+          <span class="input-group-addon" id="basic-addon2">degrees N</span>
+        </div>
+    </div>
+</div>
+{% endblock %}
